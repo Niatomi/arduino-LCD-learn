@@ -6,7 +6,7 @@
 #define BUTTON A0
 #define LED_BRIGHT_PIN A0
 
-byte blinkAmount = 2; // 1 is turn and off light
+byte blinkAmount = 2;
 unsigned int blinkTime = 1000;
 unsigned int timeWait = 10000;
 unsigned int timeWaitYellow = 3000;
@@ -51,7 +51,7 @@ void setup() {
 
 void writeTimeOnSecondAndThirdRows(String message, int time) {
   int buffer = time/1000;
-  writeLCD((message));
+  writeLCD(message);
   LCD.setCursor(0, 1);
   LCD.print(remainingTimeString);
   LCD.setCursor(0, 2);
