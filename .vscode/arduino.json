@@ -2,5 +2,5 @@
   "board": "arduino:avr:uno",
   "programmer": "arduino:avrispmkii",
   "port": "COM3",
-  "sketch": "task9\\LCD.ino"
+  "sketch": "task7\\LCD.ino"
 }
